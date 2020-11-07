@@ -55,7 +55,7 @@
         android:layout_marginRight="8dp"
         android:background="@android:drawable/spinner_dropdown_background"
         android:hint="valueOfPounds"
-        android:text=" onverted value"
+        android:text=" Converted value"
         android:textSize="36sp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
