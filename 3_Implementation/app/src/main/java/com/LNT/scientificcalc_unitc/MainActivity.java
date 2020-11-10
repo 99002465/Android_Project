@@ -8,7 +8,6 @@ import android.media.Image;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.View;
 
 import java.lang.reflect.Array;
 import java.util.ArrayList;
@@ -16,9 +15,9 @@ import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
 
-    ArrayList<String> applicationName = new ArrayList<>(Arrays.asList("Scientific Calc","Unit Converter","BMI Calculator"));
+    ArrayList<String> applicationName = new ArrayList<>(Arrays.asList("Scientific Calc","Unit Converter"));
 
-    ArrayList<Integer> imageArray = new ArrayList<Integer>(Arrays.asList(R.drawable.image,R.drawable.download,R.drawable.bmi));
+    ArrayList<Integer> imageArray = new ArrayList<Integer>(Arrays.asList(R.drawable.image,R.drawable.download));
     RecyclerView recyclerView;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,6 +33,4 @@ public class MainActivity extends AppCompatActivity {
         recyclerView.setAdapter(customAdapter);
 
     }
-
-
 }

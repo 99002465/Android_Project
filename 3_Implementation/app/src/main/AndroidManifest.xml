@@ -9,8 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.ScientificCalc_UnitC">
-        <activity android:name=".BMI_calc"></activity>
-        <activity android:name=".ScientificCalc" />
+        <activity android:name=".ScientificCalc"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

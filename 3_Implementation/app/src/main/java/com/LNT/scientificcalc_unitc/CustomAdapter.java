@@ -67,10 +67,10 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
                        Intent intent1 = new Intent(context.getApplicationContext(), ScientificCalc.class);
                        context.startActivity(intent1);
                        break;
-                   case 2:
-                       Intent i2 = new Intent(context.getApplicationContext(), BMI_calc.class);
-                       context.startActivity(i2);
-                       break;
+//                   case 1:
+//                       Intent i2 = new Intent(getApplicationContext(), ActivityTwo.class);
+//                       startActivity(i2);
+//                       break;
                    default:
                        Toast.makeText(context,"Pls Choose Right Application",Toast.LENGTH_LONG).show();
 
