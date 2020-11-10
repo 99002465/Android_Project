@@ -40,7 +40,7 @@
         android:background="@color/bg_color2"
 
 
-        android:text="Male"
+       android:text="Male"
         android:textColor="#ffffff"
         app:layout_constraintEnd_toStartOf="@+id/button2"
         app:layout_constraintHorizontal_bias="0.5"
