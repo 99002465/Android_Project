@@ -33,5 +33,5 @@ jobs:
         run: java -version
       - name: Compile
         run: |
-          cd 3_Implementation/src/src/Employeee/
-          javac Front_Page.java login.java details.java conn.java View_Employee.java Update_Employee.java Search_Employee.java Remove_Employee.java Print_Data.java Add_Employee.java
+          cd 3_Implementation/app/src/main/java/com/LNT/scientificcalc_unitc/
+          javac MainActivity.java CustomAdapter.java BMI_calc.java ScientificCalc.java Unit_Converter.java
