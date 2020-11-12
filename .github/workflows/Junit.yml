@@ -1,0 +1,37 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Junit
+
+# Controls when the action will run. Triggers the workflow on push or pull request
+# events but only for the main branch
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+# A workflow run is made up of one or more jobs that can run sequentially or in parallel
+jobs:
+  # This workflow contains a single job called "build"
+  build:
+    # The type of runner that the job will run on
+    runs-on: ubuntu-latest
+
+    # Steps represent a sequence of tasks that will be executed as part of the job
+    steps:
+      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+      - uses: actions/checkout@v2
+
+      # Runs a single command using the runners shell
+      - name: JDK and JRE
+        run: |
+             sudo apt install default-jdk
+             sudo apt install default-jre
+
+      # Runs a set of commands using the runners shell
+      - name: Verify version
+        run: java -version
+      - name: Compile
+        run: |
+          cd 3_Implementation/src/src/Employeee/
+          javac Front_Page.java login.java details.java conn.java View_Employee.java Update_Employee.java Search_Employee.java Remove_Employee.java Print_Data.java Add_Employee.java
